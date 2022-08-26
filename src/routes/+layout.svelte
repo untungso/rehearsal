@@ -1,14 +1,16 @@
 <script lang="ts">
-	import Header from '$lib/header/Header.svelte';
-	import '../app.css';
+	//  Load Global CSS
+	import '$root/styles/app.css';
+	import '$root/styles/reset.css';
+	import '$root/styles/vars.css';
 </script>
-
-<Header />
 
 <main>
 	<slot />
 </main>
 
-<footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>
+<style>
+	main {
+		margin-top: var(--bar-height);
+	}
+</style>

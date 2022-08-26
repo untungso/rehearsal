@@ -1,34 +1,20 @@
-<script lang="ts">
-	import Counter from '$lib/Counter.svelte';
+<script lant="ts">
+	import Bar from '$root/lib/navigations/Bar.svelte';
+	import Side from '$root/lib/navigations/Side.svelte';
+	import Footer from '$root/lib/navigations/Footer.svelte';
+
+	import { createTitle } from '$root/utils/title-generator';
+	const title = createTitle(`Hello World!`);
+	let names = ['Name 1', 'Name 2', 'Name 3'];
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>{title}</title>
 </svelte:head>
 
-<section>
-	<h1>
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	}
-
-	h1 {
-		width: 100%;
-	}
-</style>
+<Bar />
+<Side />
+{#each names as name, index}
+	<li>{index} - {name}</li>
+{/each}
+<Footer />
