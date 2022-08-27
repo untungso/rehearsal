@@ -1,8 +1,19 @@
 :root {
+    --font-xxs: 10px;
+    --font-xs: 14px;
+    --font-sm: 15px;
+    --font-display: 16px;
+    --font-md: 23px;
+    --font-lg: 31px;
+    --font-xl: 47px;
     --bar-height: 64px;
-    --space-small: 12px;
-    --space-medium: 18px;
-    --space-large: 24px;
+    --space-small: 18px;
+    --space-medium: 24px;
+    --space-large: 32px;
+    --font-normal: 100;
+    --font-normal: 300;
+    --font-bold: 500;
+    --font-black: 900;
 }
 
 @media (prefers-color-scheme: light) {

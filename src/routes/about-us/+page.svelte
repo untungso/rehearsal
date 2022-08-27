@@ -1,6 +1,11 @@
+<script lant="ts">
+	import { createTitle } from '$root/utils/title-generator';
+
+	const title = createTitle(`About Us`);
+</script>
+
 <svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
+	<title>{title}</title>
 </svelte:head>
 
 <div class="content">
