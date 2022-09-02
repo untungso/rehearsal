@@ -4,6 +4,7 @@
 	import Footer from '$root/lib/navigations/Footer.svelte';
 	//  Load Global CSS
 	import '$root/styles/app.css';
+	import '$root/styles/fonts.css';
 	import '$root/styles/reset.css';
 	import '$root/styles/vars.css';
 </script>
@@ -13,15 +14,14 @@
 </svelte:head>
 <Bar />
 <Side />
-<main>
+<main class="svelte">
 	<slot />
 </main>
 <Footer />
 
 <style>
-	main {
+	.svelte {
 		margin-top: var(--bar-height);
-		padding-top: var(--space-medium);
-		padding-bottom: var(--space-medium);
+		padding: var(--space-medium);
 	}
 </style>

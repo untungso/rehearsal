@@ -1,7 +1,7 @@
 <script lant="ts">
 	import { createTitle } from '$root/utils/title-generator';
 	const title = createTitle(`Hello World!`);
-	let names = ['Name 1', 'Name 2', 'Name 3'];
+	let names = [100, 200, 300, 400, 500, 600, 700, 800, 900];
 </script>
 
 <svelte:head>
@@ -9,5 +9,5 @@
 </svelte:head>
 
 {#each names as name, index}
-	<li>{index} - {name}</li>
+	<li style="font-weight: {name}">{index} - {name}</li>
 {/each}

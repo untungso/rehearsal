@@ -13,13 +13,13 @@
 	<nav class="right-nav">
 		<ul>
 			<li class:active={$page.url.pathname === '/'}>
-				<a sveltekit:prefetch href="/">Learn</a>
+				<a data-sveltekit-prefetch href="/">Learn</a>
 			</li>
 			<li class:active={$page.url.pathname === '/'}>
-				<a sveltekit:prefetch href="/">Camps</a>
+				<a data-sveltekit-prefetch href="/">Camps</a>
 			</li>
 			<li class:active={$page.url.pathname === '/about-us'}>
-				<a sveltekit:prefetch href="/about-us">About Us</a>
+				<a data-sveltekit-prefetch href="/about-us">About Us</a>
 			</li>
 			<li>
 				<Button>Connect</Button>
