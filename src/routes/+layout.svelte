@@ -21,7 +21,9 @@
 
 <style>
 	.svelte {
+		min-height: 100vh;
 		margin-top: var(--bar-height);
 		padding: var(--space-medium);
+		width: calc(100vw - (var(--side-width) + var(--border-sm)));
 	}
 </style>

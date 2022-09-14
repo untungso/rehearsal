@@ -14,21 +14,16 @@
 	</div>
 </footer>
 <div class="footer-social-media">
-	<div class="social-media-button" style="background-color: var(--slate11)">
-		<a href="https://wow.com" target="_blank">
-			<button />
-		</a>
-	</div>
-	<div class="social-media-button" style="background-color: var(--slate10)">HEY</div>
-	<div class="social-media-button" style="background-color: var(--slate9)">HEY</div>
-	<div class="social-media-button" style="background-color: var(--slate8)">HEY</div>
+	<div class="social-media-button">Instagram</div>
+	<div class="social-media-button">Youtube</div>
+	<div class="social-media-button">Discord</div>
 </div>
 
 <style>
 	footer {
 		width: calc(100vw - var(--side-width));
-		border-top: 2px solid var(--slate6);
-		border-bottom: 2px solid var(--slate6);
+		border-top: var(--border-sm) solid var(--slate6);
+		border-bottom: var(--border-sm) solid var(--slate6);
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;

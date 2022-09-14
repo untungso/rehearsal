@@ -37,8 +37,8 @@
 <style>
 	.counter {
 		display: flex;
-		border-top: 1px solid var(--slate12);
-		border-bottom: 1px solid var(--slate10);
+		border-top: var(--border-sm) solid var(--slate12);
+		border-bottom: var(--border-sm) solid var(--slate10);
 		margin: 1rem 0;
 	}
 
