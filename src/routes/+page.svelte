@@ -1,4 +1,4 @@
-<script lant="ts">
+<script lang="ts">
 	import { createTitle } from '$root/utils/title-generator';
 	const title = createTitle(`Hello World!`);
 	let names = [100, 200, 300, 400, 500, 600, 700, 800, 900];
