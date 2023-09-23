@@ -1,5 +1,7 @@
-function helloWorld() {
-  return "hello world";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.hello = void 0;
+function hello() {
+    return "hello world";
 }
-
-module.exports = helloWorld;
+exports.hello = hello;
